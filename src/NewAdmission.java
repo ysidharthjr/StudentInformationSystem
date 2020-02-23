@@ -315,7 +315,7 @@ public class NewAdmission extends javax.swing.JFrame {
          int admCnt=0;
           try {
 Class.forName("java.sql.Driver");
-Connection con=DriverManager.getConnection("jdbc:mysql://localhost/StudentInformationSystem","root","123");
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost/StudentInformationSystem","root",LoginPage.password);
 Statement stmt=con.createStatement();
 String query="Select count(*) from Students;";
 ResultSet rs=stmt.executeQuery(query);
@@ -333,7 +333,7 @@ JOptionPane.showMessageDialog (null,"Error in Data Connectivity");
           int roll=1;
           try {
 Class.forName("java.sql.Driver");
-Connection con=DriverManager.getConnection("jdbc:mysql://localhost/StudentInformationSystem","root","123");
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost/StudentInformationSystem","root",LoginPage.password);
 Statement stmt=con.createStatement();
 String query="Select count(*) from Students group by Std having std='"+std+"';";
 ResultSet rs=stmt.executeQuery(query);
@@ -357,8 +357,8 @@ catch (Exception e){
                      house="Blue";
      try {
 Class.forName("java.sql.Driver");
-LoginPage obc=new LoginPage();
-Connection con=DriverManager.getConnection("jdbc:mysql://localhost/StudentInformationSystem","root",obc.password);
+
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost/StudentInformationSystem","root",LoginPage.password);
 Statement stmt=con.createStatement();
 String query="Insert into Students values ('"+admNo+"',"+roll+",'"+n+"','"+dob+"','"+gndr+"','"+fn+"','"+std+"','"+addr+"','"+phno+"','"+bgr+"','"+house+"');";
 stmt.executeUpdate(query);

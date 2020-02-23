@@ -324,8 +324,8 @@ DefaultTableModel model=(DefaultTableModel)jT.getModel();
         String query="";
         try {
 Class.forName("java.sql.Driver");
-LoginPage obc=new LoginPage();
-Connection con=DriverManager.getConnection("jdbc:mysql://localhost/StudentInformationSystem","root",obc.password);
+
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost/StudentInformationSystem","root",LoginPage.password);
 Statement stmt=con.createStatement();
 if (b1.isSelected())
 query="Select * from Students where name like '%"+tf1.getText()+"%';";

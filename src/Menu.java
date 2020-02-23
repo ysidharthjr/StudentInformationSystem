@@ -42,7 +42,7 @@ public class Menu extends javax.swing.JFrame {
         setResizable(false);
 
         jSeparator1.setForeground(new java.awt.Color(51, 51, 51));
-        jSeparator1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jSeparator1.setBorder(new javax.swing.border.SoftBevelBorder(0));
 
         jLabel3.setBackground(new java.awt.Color(51, 255, 51));
         jLabel3.setFont(new java.awt.Font("Tequilla Sunrise", 1, 54)); // NOI18N
@@ -52,7 +52,7 @@ public class Menu extends javax.swing.JFrame {
 
         jSeparator3.setForeground(new java.awt.Color(51, 51, 51));
         jSeparator3.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        jSeparator3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jSeparator3.setBorder(new javax.swing.border.SoftBevelBorder(0));
 
         jLabel1.setBackground(new java.awt.Color(51, 255, 51));
         jLabel1.setFont(new java.awt.Font("Tequilla Sunrise", 1, 54)); // NOI18N
@@ -62,10 +62,10 @@ public class Menu extends javax.swing.JFrame {
 
         jSeparator4.setForeground(new java.awt.Color(51, 51, 51));
         jSeparator4.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        jSeparator4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jSeparator4.setBorder(new javax.swing.border.SoftBevelBorder(0));
 
         jSeparator2.setForeground(new java.awt.Color(51, 51, 51));
-        jSeparator2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jSeparator2.setBorder(new javax.swing.border.SoftBevelBorder(0));
 
         button1.setForeground(new java.awt.Color(255, 0, 0));
         button1.setLabel("Exit");
